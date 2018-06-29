@@ -7,7 +7,7 @@ img: software.jpg # Add image post (optional)
 tags: [Jekyll, Github, Blog, 个人博客] # add tag
 ---
 
-一行代码都没写就搭好了自己的博客可以说是成就感十足了。是的没错，只需要一个模板一个github账号，一个域名里有自己id的博客就完成了，你值得拥有。
+一行代码都没写就搭好了自己的博客可以说是成就感十足了。是的没错，只需要一个模板一个github账号，一个域名里有自己id的博客就完成了，你值得拥有。<!-- more -->
 
 ### 选择一个Jekyll模板
 

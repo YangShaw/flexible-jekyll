@@ -22,6 +22,8 @@ social-email: fuyuxyfy@163.com
 # Disqus
 discus-identifier: mr-brown # add your discus identifier
 
+excerpt_separator:  '<!-- more -->'
+
 # Tracker
 analytics: # Google Analytics
 
