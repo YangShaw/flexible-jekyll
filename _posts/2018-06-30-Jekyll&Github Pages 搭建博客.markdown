@@ -2,7 +2,7 @@
 layout: post
 title: Jekyll & Github 搭建博客
 date: 2018-06-30 01:21:00 +0800
-description: You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. # Add post description (optional)
+description: jekyll和github pages搭建博客   jekyll博客快速入门  GitHub pages博客快速入门   萧杨的个人博客  萧杨 # Add post description (optional)
 img: software.jpg # Add image post (optional)
 tags: [Jekyll, Github, Blog, 个人博客] # add tag
 ---
@@ -41,4 +41,15 @@ fork之后，你的github库里就多了一个和你选择的模板同名的库�
 [markdown语法入门](https://www.jianshu.com/p/191d1e21f7ed)
 
 用到的图片存储在根目录下的**assets-imgs**文件夹中。也可以再创建子文件夹来方便整理结构，只需要注意引用图片时候的路径就好了。
+
+### 小技巧（随时更新）
+
+1.	设置摘要
+最开始，主页上的摘要长度忽长忽短，无法手动指定。经过网上查阅资料，找到方法如下：
+-   打开配置文件_config.yml，添加**excerpt_separator:  '<!-- more -->'**。这个声明的作用是指定摘要与正文之间的分割符。
+-   打开主页index.html， 将其中的**post.content**修改成**post.excerpt**，根据我的推测，原来的意思应该是在这里显示文章的内容，直到显示不开了为止，所以之前的效果是忽长忽短；修改后的意思是在这里显示文章的摘要。
+-   打开文章，在合适的位置插入分隔符**<!-- more -->**。重新打开网站，不出意外应该可以成功了。
+
+
+
 
