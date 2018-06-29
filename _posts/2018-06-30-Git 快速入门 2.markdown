@@ -1,0 +1,40 @@
+---
+layout: post
+title: Git 快速入门
+date: 2018-06-30 00:06:00 +0800
+description: You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. # Add post description (optional)
+img: github.jpg # Add image post (optional)
+fig-caption: # Add figcaption (optional)
+tags: [Github, 入门, 技巧] # add tag
+---
+
+###  在本地建立git库并关联到github：
+
+1.选择要关联的本地库（就是一个项目的文件夹，或者就是随便一个文件夹，比如之前创建的gs-maven）
+
+2.在这个文件夹下右键-git bash here，只要在这个gs-maven目录下就可以
+
+3.git init指令：创建库
+
+4.git add file.txt src target（文件和文件夹都可以add） 
+这个add就是选择你准备提交的文件（一般是在上一个版本后修改过的，因为修改的过程是一个持续的，所以经过一系列的add之后在进行commit）
+
+5.git status 可以看到当前库的状态，比如有没有add完没提交的啊，或者修改后没add 的啊之类的。
+
+6.git commit -m “message...” 进行提交，后面是提交信息，一定不要偷懒，每次都写上，方便之后进行版本回退等等工作。
+
+7.git log 查看每次提交的信息
+
+8.添加远程库：首先在github上new一个repository，copy这个地址（url），然后在本地执行指令：
+git remote add origin url
+有两个地址，一个是http的，教程上是ssh的。实际上使用ssh的可以不用每次都输入口令，而且更加快速。
+
+9.将之前commit的内容push到github上：
+git push -u origin master 因为此时远程库是新创建的，所以用-u来将本地master分支合并到远程的master分支。而以后的push中就不需要加入-u了。
+
+10.注意事项 在github上new repository时可能会带上readme.txt，这个文件是本地库中没有的，这样在push的时候就会出现问题。我们需要先将远程库中的内容pull下来，然后再push。
+指令为：git pull --rebase origin master 
+
+
+
+
